@@ -1,0 +1,431 @@
+/* estilo.css */
+
+/* --- Configurações Gerais --- */
+body {
+    font-family: 'Arial', sans-serif; /* Fonte padrão limpa */
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #333;
+}
+
+/* Títulos em uma fonte mais elegante e na cor vermelha do projeto */
+h1, h2, h3 {
+    color: #a33; 
+    font-family: 'Georgia', serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* =========================================
+   1. BARRA SUPERIOR (PRETA)
+========================================= */
+.topo-site {
+    background-color: #222; /* Fundo Preto/Cinza Escuro */
+    padding: 10px 40px;     /* Altura da barra */
+    display: flex;          /* Coloca logo e botão lado a lado */
+    justify-content: space-between; /* Empurra um para cada ponta */
+    align-items: center;    /* Centraliza verticalmente */
+    border-bottom: none;    /* Removemos a borda vermelha antiga aqui */
+}
+
+/* Tamanho da Logo na barra preta */
+.topo-site img {
+    height: 90px; /* Ajuste a altura conforme necessário */
+    width: auto;
+    display: block;
+}
+
+/* Estilo do Botão na barra preta */
+.btn-professor {
+    text-decoration: none;
+    color: #a33; /* Texto vermelho */
+    font-weight: bold;
+    font-size: 0.9em;
+    border: 1px solid #a33; /* Borda vermelha fina */
+    padding: 8px 15px;
+    border-radius: 4px;
+    transition: all 0.3s;
+}
+
+.btn-professor:hover {
+    background-color: #a33;
+    color: white;
+}
+
+/* =========================================
+   2. BANNER PRINCIPAL (BEGE)
+========================================= */
+.banner-principal {
+    background-color: #f9f6e5; /* O fundo bege claro */
+    text-align: center;        /* Tudo centralizado */
+    padding: 60px 20px;        /* Espaçamento generoso em cima e embaixo */
+    border-bottom: none;
+}
+
+/* O Título "VERSOS E ENCONTROS" */
+.banner-principal h1 {
+    color: #a33; /* Vermelho queimado */
+    font-family: 'Georgia', serif;
+    font-size: 3em; /* Bem grande */
+    margin: 0 0 15px 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* A frase "Descubra novas histórias..." */
+.banner-principal p {
+    font-size: 1.4em;
+    color: #222; /* Cor escura quase preta */
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Ajuste no Main para dar espaço do banner */
+.catalogo-container {
+    margin-top: 50px;
+}
+
+header h1 {
+    font-size: 2.8em;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+header p {
+    font-size: 1.3em;
+    color: #555;
+    font-style: italic;
+}
+
+/* =========================================
+   RODAPÉ (FOOTER) - VERSÃO FINAL
+========================================= */
+footer {
+    background-color: #a33; /* Fundo Vermelho */
+    color: white;
+    padding: 30px 20px;
+    margin-top: 40px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; /* Esquerda - Centro - Direita */
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+/* Configuração Geral das Colunas */
+.footer-coluna {
+    flex: 1;
+}
+
+/* --- COLUNA 1: Logo e Título --- */
+.footer-logo {
+    text-align: left; /* Alinha à esquerda */
+}
+
+/* Aqui definimos o tamanho SÓ da logo do rodapé */
+.footer-logo img {
+    width: 180px;  /* Tamanho maior que você pediu */
+    height: auto;
+    margin-bottom: 10px;
+    /* REMOVI O FILTRO: A imagem já é branca */
+}
+
+.footer-logo h3 {
+    font-size: 14px;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    letter-spacing: 1px;
+    color: white;
+}
+
+/* --- COLUNA 2: Links --- */
+.footer-links {
+    text-align: center; /* Alinha ao centro */
+}
+
+.footer-links h4 {
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.footer-links li a:hover {
+    text-decoration: underline;
+}
+
+/* --- COLUNA 3: Redes Sociais --- */
+.footer-social {
+    text-align: right; /* Alinha à direita */
+}
+
+.footer-social h4 {
+    margin-top: 0;
+    font-size: 16px;
+}
+
+.icones-social {
+    font-size: 24px;
+    letter-spacing: 15px;
+}
+
+.icones-social a {
+    text-decoration: none;
+    color: white;
+}
+
+/* --- Botões Padrão --- */
+.btn-padrao {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #a33;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-padrao:hover {
+    background-color: #822;
+    transform: translateY(-2px);
+}
+
+/* =========================================
+   PÁGINA INICIAL (Catálogo - index.php)
+========================================= */
+.catalogo-container {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.titulo-secao {
+    text-align: left;
+    font-size: 2.2em;
+    margin-bottom: 40px;
+    border-bottom: 3px solid #f9f6e5;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.lista-livros {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centraliza os cards na tela */
+    gap: 40px; /* Espaço entre os livros */
+}
+
+.card-livro {
+    width: 220px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.card-livro:hover {
+    transform: scale(1.05); /* Efeito de zoom suave ao passar o mouse */
+}
+
+.card-livro img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    /* Borda e sombra para destacar a capa, como no exemplo */
+    border: 4px solid #fff;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.card-livro h3 {
+    font-size: 1.2em;
+    margin: 15px 0 5px;
+    color: #333;
+}
+
+.card-livro p {
+    color: #777;
+    font-size: 0.95em;
+    margin: 0;
+}
+
+/* =========================================
+   PÁGINA DE DETALHES (detalhes.php)
+========================================= */
+.detalhes-main {
+    background-color: #f9f6e5; /* Fundo bege da área principal */
+    padding: 40px 0;
+}
+
+.detalhes-container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+/* --- Parte Superior: Livro --- */
+.area-livro {
+    display: flex;
+    gap: 50px;
+    margin-bottom: 50px;
+    background: #fff; /* Fundo branco para destacar o livro */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.capa-grande {
+    flex: 1;
+    max-width: 350px;
+}
+
+.capa-grande img {
+    width: 100%;
+    border: 5px solid #fff;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.info-livro {
+    flex: 2;
+}
+
+.info-livro h1 {
+    font-size: 2.8em;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.resumo-texto {
+    line-height: 1.7;
+    color: #444;
+    font-size: 1.05em;
+    margin-bottom: 30px;
+}
+
+.dados-tecnicos p {
+    margin: 8px 0;
+    font-size: 1em;
+}
+
+.dados-tecnicos strong {
+    color: #555;
+}
+
+/* --- Parte Inferior: Interação --- */
+.area-interacao {
+    display: flex;
+    gap: 50px;
+    margin-top: 30px;
+}
+
+.coluna-resenhas, .coluna-form {
+    flex: 1;
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+/* --- Estilo da Lista de Resenhas --- */
+.resenha-item {
+    background: #fafafa;
+    border-left: 5px solid #a33; /* Linha vermelha lateral */
+    padding: 15px 20px;
+    margin-bottom: 25px;
+    border-radius: 0 4px 4px 0;
+}
+
+.resenha-autor {
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+}
+
+.resenha-autor::before {
+    content: '👤'; /* Ícone de usuário */
+    margin-right: 8px;
+    font-size: 1.2em;
+}
+
+.resenha-turma {
+    color: #777;
+    font-size: 0.9em;
+    margin-left: auto; /* Empurra a turma para a direita */
+    background: #eee;
+    padding: 2px 8px;
+    border-radius: 12px;
+}
+
+.resenha-conteudo {
+    font-style: italic;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* --- Estilo do Formulário --- */
+.form-resenha label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+.form-resenha input,
+.form-resenha select,
+.form-resenha textarea {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: 1em;
+    background-color: #f9f9f9;
+}
+
+.form-resenha textarea {
+    resize: vertical; /* Permite redimensionar apenas na vertical */
+}
+
+/* =========================================
+   PÁGINA DE CADASTRO (cadastrar_livro.php)
+========================================= */
+.cadastro-main {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+    min-height: 80vh;
+}
+
+.cadastro-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    border-top: 5px solid #a33;
+}
